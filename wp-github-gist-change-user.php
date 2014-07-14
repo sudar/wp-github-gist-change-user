@@ -36,5 +36,5 @@ function wp_github_gist_change_user( $user, $id ) {
     return 'sudar';
 }
 
-add_filter( 'wp-github-gist-user', 'wp_github_gist_change_user' );
+add_filter( 'wp-github-gist-user', 'wp_github_gist_change_user', 10, 2 );
 ?>
